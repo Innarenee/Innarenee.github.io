@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+}
+
+header #contacts {
+    background: #2a2a2a;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+header #contacts p {
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+header nav {
+    background: #222;
+    width: 100%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+}
+
+header nav #logo {
+    width: 50%;
+    margin: 0 10px;
+}
+
+header nav #logo h1 {
+    margin: 0 10px;
+    color: #D4AF37;
+}
+
+header nav #links {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin: 0 10px;
+}
+
+header nav #links p {
+    margin: 0 10px;
+}
+
+header nav p {
+    margin: 0 10px;
+}
+
+header #banner {
+    /* background: url(https://t3.ftcdn.net/jpg/03/30/81/70/360_F_330817072_DJIe5dlLrZDLjI62ORM5xDcDjixTUQrY.jpg); */
+    background: #000000;
+    background-size: cover;
+    width: 100%;
+    height: 73%;
+    display: flex;
+    align-items: center;
+}
+
+header #banner form {
+    --form-margin: 30px;
+    width: calc(400px - var(--form-margin) * 2);
+    height: calc(100% - var(--form-margin) * 2);
+    margin: var(--form-margin);
+    background: #222;
+    box-shadow: 1px 6px 25px 1px rgba(0,0,0,0.7);
+}
+
+header #banner form #form-header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+header #banner form #form-header h2 {
+    color: #d4af36;
+    text-shadow: 0px 1px 3px rgba(49, 51, 75, 0.46);
+    margin: 0 30px;
+    margin-top: 7.5px;
+}
+
+header #banner form #form-main {
+    height: 50%;
+}
+
+header #banner form #form-main input {
+    --input-margin: 30px;
+    --border: 1px;
+    width: calc(100% - var(--input-margin) * 2 - var(--border) * 2);
+    margin: 8px var(--form-margin);
+    height: 20%;
+    border: var(--border) solid #cfcfcf;
+    padding: 0;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+header #banner form #form-main input::placeholder {
+    padding: 0 5px;
+}
+
+header #banner form #form-main textarea {
+    --input-margin: 30px;
+    --border: 1px;
+    width: calc(100% - var(--input-margin) * 2 - var(--border) * 2);
+    height: 40%;
+    margin: 8px var(--form-margin);
+    border: var(--border) solid #cfcfcf;
+    padding: 0;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+header #banner form #form-main textarea::placeholder {
+    padding: 10px 5px;
+}
+
+header #banner form #form-footer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+header #banner form #form-footer button {
+    width: 150px;
+    height: 30%;
+    border: none;
+    border-radius: 5px;
+    background: #d4af36;
+    color: #000;
+    font-size: 1em;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+}
+
+main {
+    background: #121212;
+    width: 100%;
+    min-height: 100px;
+}
+
+main #pricing-table .plan {
+    background: #ffffff;
+    box-shadow: 1px 6px 25px 1px rgba(0,0,0,0.7);
+    border-bottom: 5px solid #817aa4;
+}
+
+main #pricing-table .plan-header {
+    width: 100%;
+    height: 19%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #817aa4;
+}
+
+main #pricing-table .plan-header h2 {
+    color: #fff;
+}
+
+main #pricing-table .plan-price {
+    width: 100%;
+    height: calc(21% - 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #pricing-table .plan-price h1 {
+    font-variant: small-caps;
+    color: #000000;
+    letter-spacing: .1em;
+    text-shadow: 1px 1px 0px #940000, -1px -1px 0px #224C94;
+}
+
+main #pricing-table .plan-main {
+    height: 60%;
+}
+
+main #pricing-table .plan-main ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+main #pricing-table .plan-main li {
+    padding: 5px;
+}
+
+main #about-us {
+    height: 90vh;
+}
+
+aside {
+    background: #2a2a2a;
+    width: 100%;
+    min-height: 100px;
+}
